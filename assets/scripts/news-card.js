@@ -12,7 +12,6 @@ function createNewsCard({ image, content, title }) {
   <div class="news-card__content">${content}</div>
     `
   );
-
   newsWrapper.insertAdjacentElement('beforeend', newsCard);
 }
 
