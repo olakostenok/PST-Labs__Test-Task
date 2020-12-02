@@ -7,12 +7,12 @@ import deleteNews from './delete-news.js';
 function createNewsPage () {
     requestEmulate('assets/json/data.json').then(function(data) {
         data.forEach(createNewsCard);
+        deleteNews ();
     });
     if(localStorage.getItem('login as') == 'user') {
         createUserFeatures ();
     } else {
         createUserFeatures ();
-        deleteNews ();
     }
     addNewsToFavorites ();
 }

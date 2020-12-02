@@ -1,6 +1,9 @@
 function deleteNews() {
-  const deleteButton = document.querySelectorAll('.add-to-trash');
-  console.log(deleteButton);
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('add-to-trash')) {
+      e.target.parentElement.parentElement.remove();
+    }
+  });
 }
 
 export default deleteNews;
