@@ -27,12 +27,16 @@ function checkFormFields() {
         el.classList.add('valid-field');
         validField++;
         localStorage.setItem('login as', user.login);
+      } else if (el.value == admin.login) {
+        el.classList.add('valid-field');
+        validField++;
+        localStorage.setItem('login as', admin.login);
       } else {
         el.classList.add('invalid-field');
       }
     }
     if (index == 1) {
-      if (el.value == user.password) {
+      if (el.value == user.password || el.value == admin.password) {
         el.classList.add('valid-field');
         validField++;
       } else {

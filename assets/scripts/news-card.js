@@ -9,7 +9,11 @@ function createNewsCard({ image, content, title }) {
   <div class="news-card__image">
     <img src="${image}" alt="image" />
   </div>
-  <div class="news-card__content">${content}</div>
+  <div class="news-card__content">
+  <p>${content}</p>
+  <button class="add-to-favorites">Добавить в «Избранное» <i class="fa fa-heart"></i></button>
+  <button class="add-to-trash hidden">Удалить новость <i class="fa fa-trash"></i></button>
+  </div>
     `
   );
   newsWrapper.insertAdjacentElement('beforeend', newsCard);
