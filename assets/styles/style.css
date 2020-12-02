@@ -191,3 +191,9 @@ transition: transform .6s;
 .hidden {
   display: none;
 }
+.invalid-field {
+  border: 1px solid red;
+}
+.valid-field {
+  border: 1px solid green;
+}
