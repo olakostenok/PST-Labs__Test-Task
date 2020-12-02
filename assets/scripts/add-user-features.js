@@ -6,6 +6,16 @@ function createUserFeatures() {
     'login as'
   )}`.toUpperCase();
   mainContainer.appendChild(userString);
+ 
+  const favoritesLink = document.createElement('a');
+  favoritesLink.setAttribute('href', '#')
+  favoritesLink.className = 'favorites';
+  favoritesLink.innerHTML = 'Избранное ';
+  mainContainer.appendChild(favoritesLink);
+
+  const heartIcon = document.createElement('i');
+  heartIcon.className = 'fa fa-heart';
+  favoritesLink.appendChild(heartIcon);
 }
 
 export default createUserFeatures;

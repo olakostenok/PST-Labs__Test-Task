@@ -66,7 +66,7 @@ body {
   text-align: center;
   line-height: 25px;
 }
-.user-page {
+.user-page, .favorites {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(59,129,139,1) 100%);  
   padding: 10px 0;
   position: absolute;
@@ -75,6 +75,18 @@ body {
   font-weight: 600;
   width: 100%;
   text-align: center;
+  font-size: 18px;
+}
+.favorites {
+  background: none;
+  right: 0;
+  width: 150px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+}
+.favorites i {
+  color: rgb(194, 35, 35);
 }
 .add-to-favorites, .add-to-trash {
   padding: 10px 20px;
@@ -88,6 +100,7 @@ body {
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
   margin: 0 10px 10px;
 }
+
 .hidden {
   display: none;
 }

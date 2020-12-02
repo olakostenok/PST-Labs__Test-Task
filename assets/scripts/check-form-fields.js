@@ -9,7 +9,7 @@ function resetFields() {
       el.classList.remove('valid-field');
       el.classList.remove('invalid-field');
     });
-  }, 2000);
+  }, 1000);
 }
 function checkFormFields() {
   const user = {
