@@ -5,6 +5,7 @@ import tabSwitcher from './tabs-switcher.js';
 function init () {
     tabSwitcher ();
     localStorage.clear();
+    new WOW().init();
 }
 
 init ();
