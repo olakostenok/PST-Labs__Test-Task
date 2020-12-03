@@ -8,6 +8,7 @@ function createNewsPage () {
     requestEmulate('assets/json/data.json').then(function(data) {
         data.forEach(createNewsCard);
         deleteNews ();
+        addNewsToFavorites ();
     });
     if(localStorage.getItem('login as') == 'user') {
         createUserFeatures ();
