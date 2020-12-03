@@ -59,5 +59,10 @@ logInButton.addEventListener('click', () => {
   checkFormFields();
   resetFields();
 });
-
+document.addEventListener('keydown', (e) => {
+  if (e.keyCode == 13) {
+    checkFormFields();
+    resetFields();
+  }
+});
 // export default checkFormFields;
