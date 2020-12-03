@@ -65,4 +65,4 @@ document.addEventListener('keydown', (e) => {
     resetFields();
   }
 });
-// export default checkFormFields;
+export default checkFormFields;

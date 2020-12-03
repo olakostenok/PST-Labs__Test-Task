@@ -1,5 +1,5 @@
 function createNewsCard({ image, content, title, toTrashButton }) {
-  if(localStorage.getItem('login as') == 'user') {
+  if (localStorage.getItem('login as') == 'user') {
     toTrashButton = 'hidden';
   } else {
     toTrashButton = '';

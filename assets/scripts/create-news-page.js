@@ -4,18 +4,18 @@ import createUserFeatures from './add-user-features.js';
 import addNewsToFavorites from './add-news-to-favorites.js';
 import deleteNews from './delete-news.js';
 
-function createNewsPage () {
-    requestEmulate('assets/json/data.json').then(function(data) {
-        data.forEach(createNewsCard);
-        deleteNews ();
-        addNewsToFavorites ();
-    });
-    if(localStorage.getItem('login as') == 'user') {
-        createUserFeatures ();
-    } else {
-        createUserFeatures ();
-    }
-    addNewsToFavorites ();
+function createNewsPage() {
+  requestEmulate('assets/json/data.json').then(function (data) {
+    data.forEach(createNewsCard);
+    deleteNews();
+    addNewsToFavorites();
+  });
+  if (localStorage.getItem('login as') == 'user') {
+    createUserFeatures();
+  } else {
+    createUserFeatures();
+  }
+  addNewsToFavorites();
 }
 
-createNewsPage ();
+createNewsPage();

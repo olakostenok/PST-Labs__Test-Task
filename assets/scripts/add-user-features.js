@@ -6,9 +6,9 @@ function createUserFeatures() {
     'login as'
   )}`.toUpperCase();
   mainContainer.appendChild(userString);
- 
+
   const favoritesLink = document.createElement('a');
-  favoritesLink.setAttribute('href', '#')
+  favoritesLink.setAttribute('href', '#');
   favoritesLink.className = 'favorites';
   favoritesLink.innerHTML = 'Избранное ';
   mainContainer.appendChild(favoritesLink);

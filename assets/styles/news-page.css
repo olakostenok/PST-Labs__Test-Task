@@ -121,7 +121,7 @@ body {
 }
 @media (max-width: 500px) {
   .news-card {
-padding: 0;
+    padding: 0;
   }
   .news-card__title {
     font-size: 18px;
@@ -130,7 +130,8 @@ padding: 0;
   .news-card__image {
     height: 150px;
   }
-  .favorites, .add-to-favorites {
+  .favorites,
+  .add-to-favorites {
     display: none;
   }
 }
